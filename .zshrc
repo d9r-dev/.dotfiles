@@ -13,6 +13,8 @@ HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
 bindkey -e
+
+bindkey -s ^f "tmux-sessionizer\n"
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/d9r/.zshrc'
@@ -31,7 +33,7 @@ plugins=(archlinux
 )
 
 alias -g ls="ls -a --color=auto"
-bindkey -s ^f "tmux-sessionizer\n"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export EDITOR=nvim
